@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+    
+    
+
+    <title>Online Marketplace</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Please fill up the form below</h1>
+      <div>
+
+        <form id = "formOne">
+          <div class = 'form-group'> <!--creates a regular form field -->
+            <label for="name">Please enter your name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+
+          <div class = 'form-group'> <!--creates a regular form field -->
+            <label for="address">Please enter your current address</label>
+            <input id="address" class="form-control" type="text">
+          </div>
+
+          
+          <lable for = "types"><strong>Choose your favourite weed</strong></lable>
+          <select class="form-control" id="types"> <!--creates a dropdown-->
+            <option>Jack Herrer</option>
+            <option>Jesus OG</option>
+            <option>Orange Poison</option>
+            <option>Lemon Kush</option>
+            <option>Strawbery Haze</option>
+          </select>
+
+          <label for = "radio"><strong>Please choose how much you want to order</strong></label> <!--section with radio-buttons-->
+          <div class="radio">
+            <label>
+              <input type="radio" name="amount" value="1gram" checked>
+              1 gram
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="amount" value="3.5grams">
+              3.5 grams
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="amount" value="28grams">
+              28 grams
+            </label>
+          </div>
+          
+
+        
+          
+          <!--<button type="submit" class="btn">Result</button>-->
+          <!--<button type="button" data-toggle="modal" data-target="#myModal" id="myBtn">Submit</button>-->
+          <button type="submit" class="btn btn-info btn-lg" id="myBtn">Submit</button>
+        </form>
+
+        <!--<div id = "output"></div>-->
+
+        <div id="receipt">
+          <h1>Receipt</h1>
+          <p>
+          Dear <span class="fullname"></span>. Thank you for purchaising <span class="amount"></span> grams of perfect <span class = "type"></span> weed.
+          </p>
+        </div>
+
+        <div id="shipping">
+          <h1>Please verify your shipping information</h1>
+          <p>
+          Dear <span class="fullname"></span>. Your <span class = "type"></span> will be shipped to <span class = "address"></span>.
+          </p>
+        </div>
+
+      </div>
+  </body>
+</html>      
